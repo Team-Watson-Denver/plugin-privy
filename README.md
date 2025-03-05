@@ -1,6 +1,5 @@
-# Eliza Plugin Starter Template
+# Privy Server Wallet Plugin for ElizaOS
 
-This repository provides a starter template for creating plugins for the [Eliza](https://github.com/ai16z/eliza) AI agent framework. It includes example implementations for search functionality using Tavily and Exa APIs.
 
 ## Prerequisites
 
@@ -43,18 +42,16 @@ This starter template is designed to work with the 'direct' client within this r
 src/
   ├── plugins/
   │   ├── tavily/     # Tavily search plugin implementation
-  │   └── exa/        # Exa search plugin implementation
+  │   └── privy/        # privy server wallet plugin implementation
   ├── common/         # Shared utilities and types
   └── index.ts        # Main entry point
 ```
 
-## Creating a Plugin
-
-See the [Plugin Development Guide](docs/PLUGIN_GUIDE.md) for detailed instructions on creating your own plugin.
 
 ## Running the Project
 
 You can run the project using the following command:
+## change the plugin in character file from tavily to privy
 
 ```bash
 pnpm exec node --loader ts-node/esm ./src/scripts/load-with-plugin.ts --characters=./characters/eternalai.character.json
@@ -75,7 +72,7 @@ This script will prompt for a comma-separated list of character files to load.
 This template includes two example plugin implementations:
 
 1. Tavily Search Plugin: Demonstrates web search capabilities using the Tavily API
-2. Exa Search Plugin: Shows how to integrate with the Exa search API
+2. Privy Server Wallet 
 
 Check the individual plugin directories for specific documentation and usage instructions.
 
